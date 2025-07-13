@@ -1,5 +1,4 @@
 import style from "./App.module.css";
-
 const App = () => {
   const {
     container,
@@ -8,7 +7,10 @@ const App = () => {
     rgbContent,
     rgbForm,
     btnContainer,
-    buttonLabel
+    buttonLabel,
+    alphaContent,
+    alphaContainer,
+    alphaBox
   } = style;
 
   const rgbLabels = [
@@ -55,6 +57,15 @@ const App = () => {
             <button className={`${buttonLabel} ${style[btn.id]}`}>
               {btn.label}
             </button>
+          </div>
+        ))}
+      </div>
+
+      <div className={alphaContent}>
+        {Array.from({ length: 10 }).map((_, index) => (
+          <div className={alphaContainer} key={index}>
+            <div className={alphaBox}></div>
+            <label>Alpha (0.{index})</label>
           </div>
         ))}
       </div>
