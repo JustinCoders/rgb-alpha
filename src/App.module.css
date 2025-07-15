@@ -96,11 +96,34 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 1px solid #000;
   height: 100px;
   width: 100px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+  }
 }
 
 @media (max-width: 700px) {
-  .rgbContainer,
-  .btnContainer {
-    flex-direction: column;
+  .rgbForm,
+  .buttonLabel {
+    padding: 5px;
+    width: 120px;
+  }
+
+  .alphaBox {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 469px) {
+  .rgbForm,
+  .buttonLabel {
+    width: 80px;
+  }
+
+  .alphaContent {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   }
 }
