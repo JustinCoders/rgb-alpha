@@ -4,7 +4,7 @@ A simple interactive tool for generating and previewing `rgba()` color values wi
 
 ## 🌐 Live Preview
 
-<a href="https://your-live-link.vercel.app" target="_blank">👉 Click here to view the live site</a>
+<a href="https://justincoders-rgb-alpha.vercel.app/" target="_blank">👉 Click here to view the live site</a>
 
 ## 📦 Features
 
